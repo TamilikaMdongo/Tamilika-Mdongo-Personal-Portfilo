@@ -1,15 +1,12 @@
 import React from 'react'
-import { useForm, ValidationError } from '@formspree/react';
+
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("movjkorz");
-  if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
-  }
+  
   return (
     <div className='contact'>
         <h1>Get in touch</h1>
-        <form className="custom-form" onSubmit={handleSubmit}>
+        <form className="custom-form" >
       <div className="form-row">
         <input type="text" placeholder="First Name" />
         <input type="text" placeholder="Last Name" />
@@ -19,7 +16,7 @@ const Contact = () => {
         <input type="text" placeholder="Subject" />
       </div>
     </form>
-    <button type='submit' disabled={state.submitting}>Submit</button>
+    <button type='submit' >Submit</button>
         </div>
   )
 }
