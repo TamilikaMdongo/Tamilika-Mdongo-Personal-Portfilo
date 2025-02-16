@@ -1,0 +1,846 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: 'Roboto + Condensed', sans-serif;
+    overflow-x: hidden;
+    color: white;
+}
+
+.Nav {
+    
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center;
+}
+.Nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px;
+    margin: 5px;   
+}
+.hero{
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+.hero-image img{
+    height: 450px;
+    position: relative;
+    left: 150%;
+}
+.hero-text{
+    
+    top:100px
+}
+.hero-text h1{
+    font-size: 50px;
+}
+.hero-text p{
+    font-size: 16px;
+}
+.hero-text button{
+    color: black;
+    background-color: white;
+    border-radius: 12px;
+    border: none;
+    height: 30px;
+    width: 150px;
+}
+
+/* Hero */
+@media screen and (max-width: 600px) {
+  .hero{
+   
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 15%;
+    
+  }
+  .hero-text{
+    margin-bottom: 80px;
+    position: relative;
+    
+  }
+  .hero-text p{
+    font-size:10px;
+  }
+  .hero-image {
+    position: relative;
+    right:550px;
+  }
+ 
+}
+
+@media screen and (min-width: 600px) {
+  
+  .hero-text{
+    margin-bottom: 80px;
+    position: relative;
+    
+  }
+  .hero-text p{
+    font-size:10px;
+  }
+  .hero-image {
+    position:relative;
+    right:150%;
+  }
+ 
+}
+
+
+/* larger devices */
+
+/* 768px and above */
+
+@media screen and (min-width:768px) {
+ 
+    .hero{
+      
+      position: relative;
+      display: flex;
+      flex-direction: row;
+    }
+   .hero-image{
+    position: relative;
+    right:30%;
+    top: 50px;
+   }
+   .hero-image img{
+    height:300px;
+   }
+  
+  }
+
+
+  
+@media screen and (min-width:1024px) {
+ 
+  .hero{
+    position: relative;
+    display:flex;
+    justify-content:space-between;
+  } 
+ .hero-text{
+  position: relative;
+  left:10%;
+ }
+}
+
+
+.About{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.about-image img {
+   
+    height: 400px;
+    width: 400px;
+    position: relative;
+    
+   
+    border-radius: 50%;
+    
+   
+   
+}
+.about-text{
+    position: relative;
+    left: 20%;
+    top: 100px;
+}
+.about-text button{
+  color: black;
+  background-color: white;
+  border-radius: 12px;
+    border: none;
+    height: 30px;
+    width: 150px;
+}
+
+/* About Responsive */
+
+@media screen and (max-width:600px) {
+ .About{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right:70px;
+ 
+ }
+  .about-image{
+    margin-bottom: 10px
+  }
+  .about-image img {
+    display: none;
+  
+  }
+  .about-text{
+   
+    position: relative;
+    right:10%;
+    bottom: 150px;
+    margin-bottom:30px;
+  }
+  
+  
+}
+
+
+@media screen and (min-width:600px) {
+  .About{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   right:50px;
+   
+  }
+   .about-image{
+     margin-bottom: 10px
+   }
+   .about-image img {
+     
+   
+   }
+   .about-text{
+    
+     position: relative;
+     left: 10px;
+     bottom: 150px;
+   }
+   
+   
+ }
+
+@media screen and (min-width:768px) {
+  .About{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+   
+  }
+  .about-image img{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 150px;
+  }
+  .about-text{
+    
+    position: relative;
+    margin-bottom: 100px;
+   
+  }
+}
+
+
+
+
+@media screen and (min-width:1024px) {
+  .About{
+    position: relative;
+    
+    
+  
+  }
+  .about-image{
+    position:relative;
+    bottom:50px;
+    left:10%
+  }
+  .about-image img{
+   
+    position:relative;
+    
+    bottom:100px;
+  }
+  .about-text{
+    
+    position: relative;
+    right:200px;
+    margin-bottom: 100px;
+   
+  }
+}
+
+.skills{
+    margin-bottom: 20px;
+}
+
+.skill-title h1{
+    position: relative;
+    left: 40%;
+}
+.skills-tile{
+  
+    display: flex;
+    flex-wrap: wrap;  /* Allows items to wrap to the next row */
+    gap: 40px; /* Adds space between items */
+    /* Set background color */
+    padding: 20px;
+    position: relative;
+    
+    
+}
+.react{
+   
+    height: 200px;
+    width: 350px;
+    background-color: #141414;
+  
+}
+.react img{
+    position: relative;
+    left: 30%;
+}
+
+
+/* SKills Responsive */
+
+
+
+@media screen and (max-width:600px){
+  .skills-tile{
+    display: flex;
+    flex-wrap: 5px;
+    position:relative;
+    left:15%;
+  }
+}
+
+
+@media screen and (min-width:768px) {
+  .skills{
+    position: relative;
+    
+  }
+  .skills-tile{
+    display: flex;
+    flex-wrap: 5px;
+    position:relative;
+    left:150px;
+  }
+  .react{
+   
+    height: 200px;
+    width: 250px;
+    background-color: #141414;
+  
+}
+.react img{
+    position: relative;
+    left: 30%;
+}
+}
+@media screen and (min-width: 1024px){
+  .skills-tile{
+  
+    display: flex;
+    flex-wrap: wrap;  /* Allows items to wrap to the next row */
+    gap: 40px; /* Adds space between items */
+    /* Set background color */
+    padding: 20px;
+    position: relative;
+    right:100%;
+    
+    
+
+}
+
+.react{
+   
+  height: 200px;
+  width: 350px;
+  background-color: #141414;
+
+}
+.react img{
+  position: relative;
+  left: 30%;
+}
+
+}
+.projects h1{
+    position: relative;
+    
+}
+
+.work{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 50px;
+    position: relative;
+    
+}
+.project{
+    height: 300px;
+    width: 100px;
+}
+
+
+/* Projects Responsive */
+
+@media screen and (max-width:600px) {
+  .projects{
+    position: relative;
+   
+  }
+  .work{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    
+  }
+  .projects h1{
+    position: relative;
+    left:80px;
+    color: wheat;
+  }
+  .project{
+    position: relative;
+    left:15%;
+    
+    border-radius: 12px;
+   
+    
+  }
+  .project img{
+    border-radius: 12px;
+    width:250px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .projects h1{
+    
+    position: relative;
+    left:35%;
+  }
+  .work{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .project{
+    position: relative;
+    left:20%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .work{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 50px;
+    position: relative;
+    right:30%;
+}
+.project{
+    height: 300px;
+    width: 100px;
+}
+}
+
+
+.contact{
+    margin-bottom: 50px;
+}
+.contact h1{
+    position: relative;
+    
+}
+
+
+
+.custom-form {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .form-row:first-child {
+    justify-content: space-between;
+  }
+  
+  .form-row:last-child {
+    display: block;
+  }
+  
+  .form-row input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: black;
+    border: none;
+ 
+    color: white;
+    outline: none;
+    border-bottom: 3px solid #222222;
+  }
+  .form-row:last-child input {
+    width: 100%;
+    background-color: black;
+    border: none;
+ 
+    color: white;
+    outline: none;
+    border-bottom: 3px solid #222222;
+  }
+  .contact button{
+    position: relative;
+    left: 30.5%;
+    top: 30px;
+    color: black;
+    background-color: white;
+    border-radius: 12px;
+    border: none;
+    height: 30px;
+    width: 150px;
+  }
+  .Footer {
+    padding: 20px;
+    
+    color: white;
+    width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-nav li {
+    display: inline;
+  }
+  
+  .footer-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .footer-name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .footer-line {
+    margin-top: 10px;
+    border: none;
+    height: 2px;
+    background: white;
+  }
+
+
+/* contact responsive section */
+
+@media screen and (max-width:600px) {
+  .contact{
+    position: relative;
+    
+  }
+}
+
+@media screen and (min-width:768px) {
+  .contact{
+    position: relative;
+    
+  }
+  .contact h1{
+    position: relative;
+    left:35%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .Footer{
+    width: 100%;
+  }
+  .footer-line{
+   
+    width: 1200px;
+  }
+  .footer p{
+    position: relative;
+    left: 250px;
+  }
+}
+
+
+@media screen and (min-width:1024px){
+  
+  .footer-line{
+    width: 100%;
+  }
+  .footer p{
+    position: relative;
+    right:100%;
+  }
+}
+/* Responsive Section */
+
+/* NavBar */
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  color: white;
+  
+}
+
+/* Navbar Header */
+.nav-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Desktop Navigation */
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  position: relative;
+  left: 900px
+  
+}
+
+.nav-links ul li {
+  margin: 0 15px;
+ 
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: black!important;
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+}
+@media (min-width: 900px){
+  .navbar{
+    position:relative;
+    right:300px;
+  }
+}
+@media (min-width: 1200px){
+  .navbar{
+    position:relative;
+    left:30px;
+  }
+}
+
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.modal-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.modal-content a {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.modal-content a:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Media Queries for Responsiveness */
+
+/* Phones */
+@media screen and (max-width: 600px) {
+  
+  .modal{
+    
+  
+      position: fixed;
+    
+      left: 2%;
+      width: 100vw;
+      height: 100vh;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      
+      z-index: 9999; /* Ensure the modal appears on top of other content */
+    
+  }
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .modal-content h2 {
+    font-size: 20px;
+    color: black;
+  }
+
+  .modal-content p {
+    font-size: 16px;
+  }
+
+  .modal-content a {
+    padding: 8px 15px;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+  
+
+  .modal-content {
+    width: 70%;
+  }
+
+  .modal-content h2 {
+    font-size: 22px;
+  }
+
+  .modal-content p {
+    font-size: 17px;
+  }
+}
+
+/* Larger Devices (Desktop and above) */
+@media screen and (min-width: 1024px) {
+
+
+  .modal-content {
+    width: 50%;
+  }
+
+  .modal-content h2 {
+    font-size: 24px;
+  }
+
+  .modal-content p {
+    font-size: 18px;
+  }
+
+  .modal-content a {
+    padding: 10px 20px;
+  }
+}
+
+
+/* Desktop Responsive*/
+
+@media screen and (max-width:1024px){
+  .Footer p{
+    display: none;
+  }
+}
