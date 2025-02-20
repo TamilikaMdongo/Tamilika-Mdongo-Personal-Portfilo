@@ -62,3 +62,29 @@ const NavBar = () => {
 }
 
 export default NavBar
+
+/*
+@media screen and (max-width:820px) {
+  .About{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    position: relative;
+    right: 150px;
+   
+  }
+  .about-image img{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 150px;
+  }
+  .about-text{
+    
+    position: relative;
+    margin-bottom: 100px;
+   
+  }
+}
+  */
